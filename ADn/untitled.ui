@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>691</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1061</width>
+    <height>691</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1061</width>
+    <height>691</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #434544;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget{background-color: rgb(255, 255, 255);
+}
+
+QTabWidget::pane {
+    border: 1px solid #343434;
+}
+ QTabBar::tab:selected {
+  background: #656563;
+border-left: 1px solid #343434;
+ border-right: 1px solid #343434;
+border-top:1px solid #343434;
+
+ }
+ QTabBar::tab {
+ border-left: 1px solid #343434;
+ border-right: 1px solid #343434;
+border-top:1px solid #343434;
+padding-left:6px;
+padding-right:6px;
+padding-bottom:6px;
+padding-top:6px;
+background: #434544;
+color:#c2c2c2;
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="ADN">
+       <attribute name="title">
+        <string>ADN</string>
+       </attribute>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>0</y>
+          <width>1061</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #636363;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>220</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} 
+</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+         <widget class="QRadioButton" name="radioButton">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>160</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#c2c2c2</string>
+          </property>
+          <property name="text">
+           <string>Generer Sequence Aleatoire</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string extracomment="Nbr_ligne"/>
+          </property>
+          <property name="placeholderText">
+           <string extracomment="nbr_ligne"/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>60</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="ValiderNbrAdn">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>60</y>
+            <width>50</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:&quot;white&quot;;
+background-color:#d50000;</string>
+          </property>
+          <property name="text">
+           <string>Valider</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>100</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#c2c2c2;</string>
+          </property>
+          <property name="text">
+           <string>Charger Fichier</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>120</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:&quot;white&quot;;
+background-color:#d50000;</string>
+          </property>
+          <property name="text">
+           <string>Chemin Vers Fichier</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>210</y>
+           <width>220</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} 
+</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QRadioButton" name="radioButton_4">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>20</y>
+            <width>131</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;
+color:#c2c2c2</string>
+          </property>
+          <property name="text">
+           <string>Toutes les sequences</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radioButton_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>40</y>
+            <width>121</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#c2c2c2;
+font: 75 10pt &quot;Tw Cen MT&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Une seul sequences</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>290</y>
+           <width>220</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius:8px 8px 8px 8px;
+} 
+</string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>Frequence Bn ADN</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>Generer ARN</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>Reverse ADN</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>160</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>%GC</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string> Fréquences de codons dans ADN</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>220</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>L'assemblage des fragments ADN</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#d50000;
+color:&quot;white&quot;</string>
+          </property>
+          <property name="text">
+           <string>Verifier Validite ADN</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QTabWidget" name="tabWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>20</y>
+           <width>471</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane {
+    border: 1px solid #c2c2c2;
+}
+ QTabBar::tab:selected {
+color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;
+
+  background: #656563;
+border-left: 1px solid #c2c2c2;
+ border-right: 1px solid #c2c2c2;
+border-top:1px solid #c2c2c2;
+
+ }
+ QTabBar::tab {
+ border-left: 1px solid #343434;
+ border-right: 1px solid #343434;
+border-top:1px solid #343434;
+padding-left:6px;
+padding-right:6px;
+padding-bottom:6px;
+padding-top:6px;
+background: #434544;
+color:#c2c2c2;
+ 
+ 
+ }
+
+
+
+
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="fADN">
+          <attribute name="icon">
+           <iconset theme="col">
+            <normaloff>.</normaloff>.</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Fragments ADNs</string>
+          </attribute>
+          <widget class="QListWidget" name="listWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>431</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+</string>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="textEdit">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>431</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QTextEdit::NoWrap</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QListWidget" name="listWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>431</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="rADN">
+          <attribute name="title">
+           <string>ADNs Reverse</string>
+          </attribute>
+          <widget class="QTextEdit" name="textEdit_4">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>431</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QTextEdit::NoWrap</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>450</y>
+           <width>776</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} </string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QTextBrowser" name="textBrowser_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>740</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>810</x>
+           <y>350</y>
+           <width>141</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#d50000;
+color:&quot;white&quot;;
+font: 75 8pt &quot;Tw Cen MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Sauvegarder les Resultat</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="geometry">
+          <rect>
+           <x>740</x>
+           <y>90</y>
+           <width>291</width>
+           <height>241</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} </string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>125</x>
+            <y>140</y>
+            <width>40</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_2">
+          <property name="geometry">
+           <rect>
+            <x>125</x>
+            <y>190</y>
+            <width>40</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>120</y>
+            <width>31</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="text">
+           <string>%GC</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>65</x>
+            <y>170</y>
+            <width>161</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+          </property>
+          <property name="text">
+           <string> Fréquences de codons dans ADN</string>
+          </property>
+         </widget>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>30</y>
+            <width>151</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QTextBrowser" name="textBrowser_4">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>40</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+          <widget class="QTextBrowser" name="textBrowser_5">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>20</y>
+             <width>40</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+          <widget class="QTextBrowser" name="textBrowser_6">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>40</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+          <widget class="QTextBrowser" name="textBrowser_7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>50</y>
+             <width>40</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>21</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>G:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>20</y>
+             <width>16</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>C:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>16</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>A:</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>50</y>
+             <width>16</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="text">
+            <string>T:</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>10</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;;
+color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Chargements des données:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>200</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;
+color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Travailler sur:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>282</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Fonction ADN:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>440</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#c2c2c2;
+font: 75 10pt &quot;Tw Cen MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string> Fragments ADNs assemblés:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>750</x>
+           <y>80</y>
+           <width>47</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Resultat:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>820</x>
+           <y>110</y>
+           <width>41</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Bn ADN:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>560</y>
+           <width>23</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#d50000;
+font: 12pt ;
+background-color:#c2c2c2;;</string>
+         </property>
+         <property name="text">
+          <string>?</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_14">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>180</y>
+           <width>23</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#d50000;
+font: 12pt ;
+
+background-color:#c2c2c2;;</string>
+         </property>
+         <property name="text">
+          <string>?</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_16">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>560</y>
+           <width>141</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#d50000;
+color:&quot;white&quot;;
+font: 75 8pt &quot;Tw Cen MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Dissimuler les graphe</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_17">
+         <property name="geometry">
+          <rect>
+           <x>492</x>
+           <y>560</y>
+           <width>141</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#d50000;
+color:&quot;white&quot;;
+font: 75 8pt &quot;Tw Cen MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Afficher les Graphe</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ARN">
+       <attribute name="title">
+        <string>ARN</string>
+       </attribute>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1043</width>
+          <height>632</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #636363;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="geometry">
+          <rect>
+           <x>412</x>
+           <y>30</y>
+           <width>220</width>
+           <height>147</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} </string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QPushButton" name="pushButton_10">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:&quot;white&quot;;
+background-color:#d50000;</string>
+          </property>
+          <property name="text">
+           <string>Transcription ARN en protéines</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>60</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:&quot;white&quot;;
+background-color:#d50000;</string>
+          </property>
+          <property name="text">
+           <string>Calculer la masse protéique</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>171</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:&quot;white&quot;;
+background-color:#d50000;</string>
+          </property>
+          <property name="text">
+           <string>Effectuer l'épissage d'ARN</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QTabWidget" name="tabWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>310</y>
+           <width>963</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget::pane {
+    border: 1px solid #c2c2c2;
+}
+ QTabBar::tab:selected {
+color:#c2c2c2;
+font: 75 9pt &quot;Tw Cen MT&quot;;
+
+  background: #656563;
+border-left: 1px solid #c2c2c2;
+ border-right: 1px solid #c2c2c2;
+border-top:1px solid #c2c2c2;
+
+ }
+ QTabBar::tab {
+ border-left: 1px solid #343434;
+ border-right: 1px solid #343434;
+border-top:1px solid #343434;
+padding-left:6px;
+padding-right:6px;
+padding-bottom:6px;
+padding-top:6px;
+background: #434544;
+color:#c2c2c2;
+ 
+ 
+ }
+
+
+
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="sARN">
+          <attribute name="title">
+           <string>Sequence ARN</string>
+          </attribute>
+          <widget class="QTextEdit" name="textEdit_3">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>923</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QTextEdit::NoWrap</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="eARN">
+          <attribute name="title">
+           <string>ARN apres epissage</string>
+          </attribute>
+          <widget class="QTextEdit" name="textEdit_2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>923</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+           </property>
+           <property name="lineWrapMode">
+            <enum>QTextEdit::NoWrap</enum>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="sProtein">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>450</y>
+           <width>963</width>
+           <height>100</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} </string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QTextBrowser" name="textBrowser_9">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>923</width>
+            <height>40</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;
+font: 75 12pt &quot;Tw Cen MT&quot;;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>20</y>
+           <width>76</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;
+color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Fonction ARN:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>440</y>
+           <width>111</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;
+color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>Sequence proteique:</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="geometry">
+          <rect>
+           <x>447</x>
+           <y>200</y>
+           <width>150</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox 
+{
+
+color:#c2c2c2;
+margin: 0em;
+  border: 1px solid #c2c2c2; 
+  border-radius: 8px;
+} </string>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QTextBrowser" name="textBrowser_8">
+          <property name="geometry">
+           <rect>
+            <x>45</x>
+            <y>14</y>
+            <width>61</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#292929;
+ border: 1px solid #292929;
+color:#c2c2c2;</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>190</y>
+           <width>107</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;Tw Cen MT&quot;;
+color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>La masse protéique:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_15">
+         <property name="geometry">
+          <rect>
+           <x>620</x>
+           <y>170</y>
+           <width>23</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:#d50000;
+font: 12pt ;
+
+background-color:#c2c2c2;</string>
+         </property>
+         <property name="text">
+          <string>?</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1061</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
